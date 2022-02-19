@@ -1,3 +1,9 @@
+/**
+ * A couple of exercises I found on the internet one day to practice my coding in Java.
+ *  
+ * AUTHOR: Petros Frangatzis
+ */
+
 package my_apps;
 
 /**
