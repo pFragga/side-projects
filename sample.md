@@ -130,12 +130,13 @@ Image syntax is very much like link syntax.
 + Inline (titles are again optional)
 
     This pic goes hard.
+
     ![alt text](https://ahseeit.com//king-include/uploads/2021/04/man-on-white-studio-background-260nw-1820135141-9099283213.jpg "this_pic_goes_hard")
 
 + Reference
 
-    Feel free to screenshot
+    Feel free to screenshot.
+
     ![alt text][pic_that_goes_hard]
 
     [pic_that_goes_hard]: https://ahseeit.com//king-include/uploads/2021/04/man-on-white-studio-background-260nw-1820135141-9099283213.jpg "this_pic_goes_hard"
-
