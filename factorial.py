@@ -4,14 +4,13 @@
 # Python script to find factorial of given number.
 # AUTHOR: PETROS FRANGATZIS
 
-""" Takes an integer as parameter and recursively computes it's factorial.
-
->>> factorial(5)
-120
->>> factorial(0)
-1  
-"""
 def factorial(x):
+    """ Takes an integer as a parameter and recursively computes it's factorial.
+    >>> factorial(5)
+    120
+    >>> factorial(0)
+    1
+    """
 
     if x < 0:
         return('Factorial undefined for non-positive integers.')
