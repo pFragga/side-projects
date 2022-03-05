@@ -1,0 +1,15 @@
+def deck_of_cards(digits: list, symbols: list) -> dict:
+    
+    return {i:j for i in digits for j in symbols}
+
+digit_ls = [i for i in range(2, 11)]
+for i in ['J', 'Q', 'K', 'A']:
+    digit_ls.append(i)
+symbol_ls = ['♠', '♣', '♥', '♦']
+print(deck_of_cards(digit_ls,symbol_ls))
+
+# class Card:
+
+#     def __init__(self, digit, symbol):
+#         self.digit = digit
+#         self. symbol = symbol

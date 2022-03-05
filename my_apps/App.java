@@ -138,4 +138,24 @@ public class App {
 
         return true;
     }
+
+    /**
+     * 
+     * @param code
+     * @return
+     */
+    public String decode(String code) {
+
+        String decoded = "";
+        int alphabetLength = 'z' - 'a' + 1;
+        int lastChar = 'z';
+
+        for (char character : code.toCharArray()) {
+            int charNoRotation = character + 5;
+            int charValue = charNoRotation < lastChar ? charNoRotation : charNoRotation - alphabetLength; // ternary operator
+            decoded += (char) charValue;
+        }
+
+        return decoded;
+    }
 }
