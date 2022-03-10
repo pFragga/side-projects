@@ -34,6 +34,6 @@ public class AccountingDepartment {
         System.out.println(
             "Total compensation for expenses of type 1: " + sum1 +
             "\nTotal Compensation for expenses of type 2: " + sum2
-            ); // OK, this works. 
+        ); // OK.
     }
 }
