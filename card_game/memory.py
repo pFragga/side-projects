@@ -6,22 +6,32 @@ AUTHOR: Petros Frangatzis
 Date: 25/Feb/22
 """
 
-# CARDS:
-# digits: 2, 3, ... 10 + J, Q, K, A
-# symbols: 
+# DECK OF CARDS:
+# digits: 2, 3, ..., 10, J, Q, K, A
+# symbols: ♠, ♥, ♣, ♦
 
-# VALUE:
-# A: 1pt(s)
+# DIGIT VALUES:
+# 2, 3, ..., 10: their respective number.
 # J, Q, K: 10: 10pt(s)
-# 2, 3, ... 10: their respective number.
+# A: 1pt(s)
 
 
-print('<-------------- Welcome to Memory! -------------->')
+class Card:
+    def __init__(self, digit, symbol) -> None:
+        self.digit = digit
+        self.symbol = symbol
+
+    def __str__(self) -> str:
+        return self.digit + self.symbol
 
 
-difficulty = input("Select difficulty: Easy (1), Harder (2), Hard (3): ")
 
 
+
+if __name__ == '__main__':
+
+    samplecard = Card('2', '♠')
+    print(samplecard.__str__())
 
 
 
