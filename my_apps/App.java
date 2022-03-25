@@ -144,7 +144,7 @@ public class App {
      * @param code
      * @return
      */
-    public String decode(String code) {
+    public static String decode(String code) {
 
         String decoded = "";
         int alphabetLength = 'z' - 'a' + 1;
@@ -157,5 +157,20 @@ public class App {
         }
 
         return decoded;
+    }
+
+    public static int[] InsertionSort(int[] A) {
+
+        for (int i = 2; i < A.length; i++) {
+            int temp = A[i];
+            int j = i - 1;
+            while (temp < A[j] && j > 0) {
+                A[j+1] = A[j];
+                j = j - 1;
+            }
+            A[j + 1] = temp;
+        }
+
+        return A;
     }
 }
