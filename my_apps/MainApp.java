@@ -7,9 +7,10 @@ public class MainApp {
 
     public static void main(String[] args) {
         
-        System.out.println(App.isPrime(35));
-
-        int a = 'g';
-        System.out.println(a); // prints out number
+        int[] arr = {45, 23, 12, 13, 11, 24, 90};
+        App.InsertionSort(arr);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
     }
 }
